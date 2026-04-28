@@ -50,28 +50,6 @@ filterBtns.forEach(btn => {
 });
 
 
-// ================= BLOG FILTER =================
-const blogBtns = document.querySelectorAll(".blog-btn");
-const blogCards = document.querySelectorAll(".blog-card");
-
-blogBtns.forEach(btn => {
-  btn.addEventListener("click", () => {
-    blogBtns.forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-
-    const filter = btn.getAttribute("data-blog");
-
-    blogCards.forEach(card => {
-      if (filter === "all" || card.dataset.blogCategory === filter) {
-        card.classList.remove("hidden");
-      } else {
-        card.classList.add("hidden");
-      }
-    });
-  });
-});
-
-
 // ================= EXPERIENCE TABS =================
 const expBtns = document.querySelectorAll(".exp-btn");
 const expContents = document.querySelectorAll(".exp-content");
@@ -90,6 +68,41 @@ expBtns.forEach(btn => {
       }
     });
   });
+});
+
+
+// ================= PROJECT MODALS =================
+document.querySelectorAll(".read-more-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const modalId = btn.getAttribute("data-modal");
+    document.getElementById(modalId).classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+document.querySelectorAll(".modal-close").forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.closest(".modal-overlay").classList.remove("active");
+    document.body.style.overflow = "";
+  });
+});
+
+document.querySelectorAll(".modal-overlay").forEach(overlay => {
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+  });
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    document.querySelectorAll(".modal-overlay.active").forEach(overlay => {
+      overlay.classList.remove("active");
+      document.body.style.overflow = "";
+    });
+  }
 });
 
 

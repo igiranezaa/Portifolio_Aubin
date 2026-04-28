@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aubin Joanes Igiraneza | Portfolio</title>
+  <title>Aubin Joanes Igiraneza | Aerospace Engineer</title>
   <link rel="stylesheet" href="style.css" />
 
   <link
@@ -21,7 +21,7 @@
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#recommendation" class="nav-link">Recommendations</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
        </ul>
 
@@ -49,7 +49,7 @@
     <a href="#projects" class="mobile-link">Projects</a>
     <a href="#skills" class="mobile-link">Skills</a>
     <a href="#experience" class="mobile-link">Experience</a>
-    <a href="#blog" class="mobile-link">Blog</a>
+    <a href="#recommendation" class="mobile-link">Recommendations</a>
     <a href="#contact" class="mobile-link">Contact</a>
   </div>
 
@@ -59,13 +59,14 @@
     <div class="hero-overlay"></div>
 
 <div class="hero-content">
-  <h1>Full-stack Developer</h1>
+  <h1>Aerospace Engineer</h1>
 
-  <h2>Building Scalable APIs & Real-World Systems</h2>
+  <h2>UAV Systems, Flight Operations & Aviation Safety</h2>
 
   <p>
-    I design and build performant backend systems and modern web applications
-    focused on scalability, efficiency, and real-world impact.
+    Hands-on experience in flight operations, UAV systems, and aviation safety.
+    Committed to advancing Rwanda's drone industry and pursuing graduate-level
+    expertise in aviation quality management and compliance.
   </p>
 
   <div class="hero-buttons">
@@ -86,7 +87,7 @@
         </div>
 
 
-    <a href="CV-aubin-3.pdf" class="btn about-btn" download>
+    <a href="Aubin-new_cv.pdf" class="btn about-btn" download>
       Download CV
     </a>
   </div>
@@ -95,21 +96,30 @@
     <h2 class="about-title">About me</h2>
 
     <p class="about-text">
-      I am Aubin Joanes IGIRANEZA and I am a full-stack developer with aerospace engineering background,
-      focused on building scalable backend systems and modern web applications.
+      I am Aubin Joanes Igiraneza, an Aerospace Engineer with hands-on experience in flight
+      operations, UAV systems, and aviation safety. Skilled in data analytics, technical
+      documentation, inspections, and operational compliance with established aviation standards.
     </p>
 
     <p class="about-text">
-      Experience in real-world operation (Zipline UAV systems) and software development.
+      I demonstrate strong analytical skills, attention to detail, and a commitment to safety
+      and continuous improvement in flight operations. I am motivated to expand my expertise
+      in aviation quality management and compliance through graduate studies.
     </p>
 
     <h3 class="about-subtitle">Key Skills</h3>
 
     <div class="about-skills">
-      <p><strong>Backend:</strong> Django, Django REST Framework, REST APIs, Python</p>
-      <p><strong>Frontend:</strong> React, JavaScript, HTML, CSS, Tailwind CSS</p>
-      <p><strong>Tools:</strong> Git, GitHub, Postman, VS Code</p>
-      <p><strong>Strengths:</strong> Problem-solving, systems thinking, analytical reasoning</p>
+      <p><strong>Engineering Software:</strong> ANSYS Workbench, ANSYS Fluent, CATIA V5, AutoCAD, Inventor 2017</p>
+      <p><strong>Simulation & Analysis:</strong> Matlab, Open Rocket, STK, Python, C++</p>
+      <p><strong>Operations:</strong> UAV Flight Operations, Pre/Post-Flight Inspections, Flight Data Monitoring</p>
+      <p><strong>Strengths:</strong> Risk Analysis, Technical Documentation, Team Coordination, RCAA & ICAO Compliance</p>
+    </div>
+
+    <div class="about-info">
+      <p><i class="fa-solid fa-location-dot"></i> Kigali, Nyarugenge, Rwanda</p>
+      <p><i class="fa-solid fa-flag"></i> Rwandan</p>
+      <p><i class="fa-solid fa-language"></i> Kinyarwanda, English (C2), French (C1)</p>
     </div>
   </div>
 </div>
@@ -121,74 +131,89 @@
   <section id="projects" class="projects">
     <div class="container">
       <h2 class="section-title">Projects</h2>
-      <p class="section-sub">Browse recent projects I have built</p>
+      <p class="section-sub">Engineering design and research projects</p>
 
 
   <div class="project-filters">
     <button class="filter-btn active" data-filter="all" type="button">All</button>
-    <button class="filter-btn" data-filter="web" type="button">Web</button>
-    <button class="filter-btn" data-filter="full-stack" type="button">Full Stack</button>
-    <button class="filter-btn" data-filter="frontend" type="button">Frontend</button>
-    <button class="filter-btn" data-filter="backend" type="button">Backend</button>
+    <button class="filter-btn" data-filter="uav" type="button">UAV / Drones</button>
+    <button class="filter-btn" data-filter="design" type="button">Design</button>
+    <button class="filter-btn" data-filter="analysis" type="button">Analysis</button>
   </div>
 
   <div class="projects-grid">
-    <div class="project-card" data-category="web full-stack frontend backend">
-      <img src="images/p1.png" alt="Quiz app project preview" />
+    <div class="project-card" data-category="uav design analysis">
+      <img src="images/ingenzi.png" alt="Ingenzi Quadcopter project preview" />
       <div class="project-content">
-        <h3>Build a Quiz App with React and Django REST API</h3>
+        <h3>Ingenzi Quadcopter Preliminary Design with Coaxial Rotors</h3>
         <p>
-          Step by step tutorial building full stack application using React and Django REST API.
+          Groundbreaking quadcopter equipped with coaxial rotors and Ingenzi technology, designed
+          for superior stability and versatility. Explores applications from surveillance to
+          challenging environments, showcasing innovation and adaptability.
         </p>
+        <span class="project-date">Aug – Sep 2023</span>
 
         <div class="project-buttons">
-          <a href="#" class="project-link">Live Site</a>
-          <a href="https://github.com/igiranezaa/quizmaster/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <button class="project-link read-more-btn" data-modal="modal-ingenzi">Read More</button>
+          <a href="project/INGENZI UAV PRESENTATION [Auto-saved].pptx" class="project-link" download>Download Slides</a>
         </div>
       </div>
     </div>
 
-    <div class="project-card" data-category="web full-stack frontend">
-      <img src="images/p2.png" alt="Job finder platform preview" />
+    <div class="project-card" data-category="design analysis">
+      <img src="images/helicopter.png" alt="Helicopter design project preview" />
       <div class="project-content">
-        <h3>Job Finder Platform</h3>
+        <h3>Helicopter Preliminary Design and Analysis</h3>
         <p>
-          Step by step tutorial building full stack application using React and Django REST API.
+          Designed a 15-seat, double-engine Search and Rescue helicopter capable of transporting
+          10 passengers and a pilot. An affordable rotorcraft concept optimized for fast urban
+          transportation, analyzed using Matlab software and benchmarked against market solutions.
         </p>
+        <span class="project-date">Sep 2022 – Jan 2023</span>
 
         <div class="project-buttons">
-          <a href="#" class="project-link">Live Site</a>
-          <a href="#" class="project-link">GitHub</a>
+          <button class="project-link read-more-btn" data-modal="modal-helicopter">Read More</button>
+          <a href="project/Helicopter Design.pdf" class="project-link" target="_blank" rel="noopener noreferrer">View Report</a>
         </div>
       </div>
     </div>
 
-    <div class="project-card" data-category="web full-stack backend">
-      <img src="images/p3.png" alt="E-commerce project preview" />
+    <div class="project-card" data-category="uav analysis">
+      <div class="project-banner banner-ecosystem">
+        <i class="fa-solid fa-earth-africa"></i>
+      </div>
       <div class="project-content">
-        <h3>E-commerce</h3>
+        <h3>Rwanda UAV Ecosystem Research & Integration</h3>
         <p>
-          Step by step tutorial building full stack application using React and Django REST API.
+          Ongoing research supporting Rwanda's drone industry development through ecosystem
+          analysis, compliance documentation, and community workshops promoting safe and
+          efficient UAV integration in line with RCAA and ICAO standards.
         </p>
+        <span class="project-date">2025 – Present</span>
 
         <div class="project-buttons">
-          <a href="#" class="project-link">Live Site</a>
-          <a href="#" class="project-link">GitHub</a>
+          <button class="project-link read-more-btn" data-modal="modal-uav">Read More</button>
+          <a href="#contact" class="project-link">Contact</a>
         </div>
       </div>
     </div>
 
-    <div class="project-card" data-category="web frontend">
-      <img src="images/p4.png" alt="Music app preview" />
+    <div class="project-card" data-category="uav design">
+      <div class="project-banner banner-zipline">
+        <i class="fa-solid fa-helicopter"></i>
+      </div>
       <div class="project-content">
-        <h3>Music app</h3>
+        <h3>UAV Medical Logistics Operations – Zipline</h3>
         <p>
-          Step by step tutorial building full stack application using React and Django REST API.
+          Operated and monitored UAVs across multiple medical delivery routes, performing
+          pre/post-flight inspections, coordinating with air traffic teams, and contributing
+          to safety and operational efficiency improvement reports.
         </p>
+        <span class="project-date">Feb – Aug 2024</span>
 
         <div class="project-buttons">
-          <a href="#" class="project-link">Live Site</a>
-          <a href="#" class="project-link">GitHub</a>
+          <button class="project-link read-more-btn" data-modal="modal-zipline">Read More</button>
+          <a href="#contact" class="project-link">Contact</a>
         </div>
       </div>
     </div>
@@ -198,23 +223,221 @@
 
   </section>
 
+  <!-- ================= PROJECT MODALS ================= -->
+
+  <div class="modal-overlay" id="modal-ingenzi">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <img src="images/ingenzi.png" alt="Ingenzi Quadcopter" class="modal-img" />
+      <h2>Ingenzi Quadcopter Preliminary Design with Coaxial Rotors</h2>
+      <span class="project-date">Aug – Sep 2023</span>
+
+      <div class="modal-section">
+        <h4>Overview</h4>
+        <p>
+          The Ingenzi Quadcopter is a pioneering UAV concept designed to push the boundaries of
+          unmanned aerial systems in Rwanda. Equipped with coaxial rotors, it achieves exceptional
+          thrust efficiency and stability by counter-rotating blade pairs that cancel torque, making
+          it more stable and agile than conventional single-rotor designs.
+        </p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Key Design Features</h4>
+        <ul>
+          <li>Coaxial rotor configuration for improved lift-to-weight ratio and torque cancellation</li>
+          <li>Ingenzi proprietary flight control technology for autonomous and semi-autonomous operation</li>
+          <li>Modular frame designed for rapid payload swapping across mission types</li>
+          <li>Optimized for hovering stability in high-altitude and wind-variable environments</li>
+          <li>Compact footprint enabling deployment in confined or urban spaces</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h4>Applications</h4>
+        <ul>
+          <li>Aerial surveillance and reconnaissance missions</li>
+          <li>Search and rescue operations in complex terrain</li>
+          <li>Agricultural monitoring and precision mapping</li>
+          <li>Infrastructure inspection in hard-to-reach areas</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h4>Tools & Methods</h4>
+        <p>CATIA V5 for 3D modelling · ANSYS Fluent for aerodynamic simulation · Matlab for
+        performance analysis · Open Rocket for flight trajectory estimation</p>
+      </div>
+
+      <div class="modal-actions">
+        <a href="project/INGENZI UAV PRESENTATION [Auto-saved].pptx" class="btn primary" download>Download Slides</a>
+        <a href="#contact" class="btn secondary" onclick="document.getElementById('modal-ingenzi').classList.remove('active')">Contact Me</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-helicopter">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <img src="images/helicopter.png" alt="Helicopter Design" class="modal-img" />
+      <h2>Helicopter Preliminary Design and Analysis</h2>
+      <span class="project-date">Sep 2022 – Jan 2023</span>
+
+      <div class="modal-section">
+        <h4>Overview</h4>
+        <p>
+          This capstone project involved the end-to-end preliminary design of a 15-seat,
+          twin-engine Search and Rescue (SAR) helicopter using Matlab-driven sizing methods
+          and aerodynamic analysis. The design was benchmarked against existing market rotorcraft
+          to validate cost efficiency and performance targets.
+        </p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Specifications</h4>
+        <ul>
+          <li>Capacity: 10 passengers + pilot + 4 crew/rescue personnel</li>
+          <li>Propulsion: Dual-engine configuration for redundancy and safety</li>
+          <li>Mission profile: Urban SAR with extended hover capability</li>
+          <li>Design goal: Affordable acquisition and operating cost vs. comparable rotorcraft</li>
+          <li>Range and endurance optimized for Rwandan topography and altitude conditions</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h4>Design Process</h4>
+        <ul>
+          <li>Preliminary sizing using momentum theory and blade element analysis</li>
+          <li>Weight estimation and center-of-gravity envelope calculation</li>
+          <li>Rotor blade geometry and tip speed optimization</li>
+          <li>Power required vs. available analysis across flight regimes</li>
+          <li>Market comparison with similar SAR platforms</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h4>Tools & Methods</h4>
+        <p>Matlab for sizing and performance analysis · AutoCAD for technical drawings ·
+        CATIA V5 for 3D conceptual model · ANSYS for structural load estimation</p>
+      </div>
+
+      <div class="modal-actions">
+        <a href="project/Helicopter Design.pdf" class="btn primary" target="_blank" rel="noopener noreferrer">View Full Report</a>
+        <a href="#contact" class="btn secondary" onclick="document.getElementById('modal-helicopter').classList.remove('active')">Contact Me</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-uav">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-banner banner-ecosystem"><i class="fa-solid fa-earth-africa"></i></div>
+      <h2>Rwanda UAV Ecosystem Research & Integration</h2>
+      <span class="project-date">2025 – Present</span>
+
+      <div class="modal-section">
+        <h4>Overview</h4>
+        <p>
+          As an Aerospace Engineering Consultant at INKJUBEIT, this ongoing initiative aims to
+          map and strengthen Rwanda's drone ecosystem — from regulatory frameworks to operational
+          capacity — in support of the country's vision to become a leading drone hub in Africa.
+        </p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Key Activities</h4>
+        <ul>
+          <li>Conducting landscape research on UAV operators, manufacturers, and service providers in Rwanda</li>
+          <li>Preparing operational and compliance documentation aligned with RCAA and ICAO standards</li>
+          <li>Organizing community workshops to educate stakeholders on safe UAV integration</li>
+          <li>Supporting policy awareness and innovation within Rwanda's aviation regulatory environment</li>
+          <li>Building partnerships between ecosystem actors to accelerate drone adoption</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h4>Impact</h4>
+        <p>
+          The research directly supports Rwanda's broader economic strategy of leveraging UAV
+          technology for agriculture, healthcare delivery, infrastructure monitoring, and
+          humanitarian logistics across the country's diverse terrain.
+        </p>
+      </div>
+
+      <div class="modal-actions">
+        <a href="#contact" class="btn primary" onclick="document.getElementById('modal-uav').classList.remove('active')">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-zipline">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-banner banner-zipline"><i class="fa-solid fa-helicopter"></i></div>
+      <h2>UAV Medical Logistics Operations – Zipline</h2>
+      <span class="project-date">Feb – Aug 2024</span>
+
+      <div class="modal-section">
+        <h4>Overview</h4>
+        <p>
+          At Zipline Rwanda, I served as a certified Flight Operator responsible for the safe
+          execution of autonomous UAV delivery missions carrying blood products, vaccines, and
+          critical medical supplies to hospitals and health centres across Rwanda.
+        </p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Responsibilities</h4>
+        <ul>
+          <li>Operated and monitored fixed-wing UAVs across multiple assigned delivery routes</li>
+          <li>Conducted thorough pre-flight and post-flight safety inspections for every mission</li>
+          <li>Coordinated in real time with air traffic control and ground operations teams</li>
+          <li>Troubleshot in-field technical issues to maintain delivery continuity</li>
+          <li>Maintained detailed flight logs and data records for compliance and reporting</li>
+          <li>Contributed to operational improvement reports and safety debriefs</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h4>Key Outcomes</h4>
+        <p>
+          Contributed to thousands of life-critical deliveries with a strong safety record.
+          Gained hands-on expertise in autonomous systems operations, real-time airspace
+          coordination, and high-stakes logistics in a regulated environment.
+        </p>
+      </div>
+
+      <div class="modal-actions">
+        <a href="#contact" class="btn primary" onclick="document.getElementById('modal-zipline').classList.remove('active')">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+
   <!-- ================= SKILLS ================= -->
 
   <section id="skills" class="skills">
     <div class="container">
       <h2 class="section-title">Skills</h2>
       <p class="section-sub">
-        Technologies I use to build scalable and efficient systems
+        Technical and operational competencies in aerospace engineering
       </p>
 
 
   <div class="skills-grid">
     <div class="skill-card">
-      <h3>Backend</h3>
+      <h3>Engineering Software</h3>
 
       <div class="skill">
         <div class="skill-info">
-          <span>Python</span>
+          <span>ANSYS Workbench / Fluent</span>
+          <span>85%</span>
+        </div>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-info">
+          <span>CATIA V5</span>
           <span>80%</span>
         </div>
         <div class="skill-bar"><div style="width: 80%"></div></div>
@@ -222,15 +445,7 @@
 
       <div class="skill">
         <div class="skill-info">
-          <span>Django</span>
-          <span>80%</span>
-        </div>
-        <div class="skill-bar"><div style="width: 80%"></div></div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-info">
-          <span>PostgreSQL</span>
+          <span>AutoCAD / Inventor 2017</span>
           <span>80%</span>
         </div>
         <div class="skill-bar"><div style="width: 80%"></div></div>
@@ -238,49 +453,53 @@
     </div>
 
     <div class="skill-card">
-      <h3>Frontend</h3>
+      <h3>Simulation & Programming</h3>
 
       <div class="skill">
         <div class="skill-info">
-          <span>React JS</span>
-          <span>80%</span>
+          <span>Matlab</span>
+          <span>85%</span>
         </div>
-        <div class="skill-bar"><div style="width: 80%"></div></div>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
       </div>
 
       <div class="skill">
         <div class="skill-info">
-          <span>JavaScript</span>
-          <span>80%</span>
+          <span>Python</span>
+          <span>75%</span>
         </div>
-        <div class="skill-bar"><div style="width: 80%"></div></div>
+        <div class="skill-bar"><div style="width: 75%"></div></div>
       </div>
 
       <div class="skill">
         <div class="skill-info">
-          <span>HTML</span>
-          <span>95%</span>
+          <span>Open Rocket / STK</span>
+          <span>75%</span>
         </div>
-        <div class="skill-bar"><div style="width: 95%"></div></div>
+        <div class="skill-bar"><div style="width: 75%"></div></div>
       </div>
 
       <div class="skill">
         <div class="skill-info">
-          <span>CSS</span>
-          <span>95%</span>
+          <span>C++</span>
+          <span>65%</span>
         </div>
-        <div class="skill-bar"><div style="width: 95%"></div></div>
+        <div class="skill-bar"><div style="width: 65%"></div></div>
       </div>
     </div>
 
     <div class="skill-card tools-full">
-      <h3>Tools</h3>
+      <h3>Operations & Compliance</h3>
       <div class="tools-wrap">
-        <div class="tool">Git</div>
-        <div class="tool">GitHub</div>
-        <div class="tool">Docker</div>
-        <div class="tool">Postman</div>
-        <div class="tool">VS Code</div>
+        <div class="tool">UAV Flight Operations</div>
+        <div class="tool">Flight Data Monitoring</div>
+        <div class="tool">Risk Analysis</div>
+        <div class="tool">RCAA Standards</div>
+        <div class="tool">ICAO Compliance</div>
+        <div class="tool">Technical Documentation</div>
+        <div class="tool">Safety Audits</div>
+        <div class="tool">Data Analysis</div>
+        <div class="tool">Team Coordination</div>
       </div>
     </div>
   </div>
@@ -296,7 +515,8 @@
 
   <div class="exp-tabs">
     <button class="exp-btn active" data-tab="work" type="button">Work Experience</button>
-    <button class="exp-btn" data-tab="education" type="button">My Education</button>
+    <button class="exp-btn" data-tab="education" type="button">Education</button>
+    <button class="exp-btn" data-tab="certifications" type="button">Certifications</button>
   </div>
 
   <div class="exp-content active" id="work">
@@ -304,23 +524,13 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-text">
-          <h3>FRONTEND PROJECTS – SELF-EMPLOYED (PART-TIME)</h3>
-          <span>2025 - Present</span>
-          <p>
-            Built responsive web apps with React and Tailwind, including a quiz app with API integration.
-            Managed state, routing, and user interactions while improving performance and UI/UX.
-          </p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-text">
           <h3>AEROSPACE ENGINEERING CONSULTANT – INKJUBEIT</h3>
-          <span>2023 - Present</span>
+          <span>Jan 2025 – Present &nbsp;|&nbsp; Kigali, Rwanda</span>
           <p>
-            Conducted UAV ecosystem research, supported compliance documentation,
-            and promoted safe UAV integration through workshops and innovation programs.
+            Conduct UAV ecosystem research to support Rwanda's drone industry development.
+            Assist in preparing operational and compliance documentation for ecosystem partners.
+            Organize workshops and community events promoting safe and efficient UAV integration.
+            Support innovation and awareness of aviation standards and regulations.
           </p>
         </div>
       </div>
@@ -329,10 +539,40 @@
         <div class="timeline-dot"></div>
         <div class="timeline-text">
           <h3>FLIGHT OPERATOR – ZIPLINE</h3>
-          <span>2023 - 2024</span>
+          <span>Feb 2024 – Aug 2024 &nbsp;|&nbsp; Rwanda</span>
           <p>
-            Operated UAVs for medical logistics, performed safety inspections,
-            coordinated with operations teams, and maintained detailed flight logs.
+            Operated and monitored UAVs for medical and logistics missions across multiple routes.
+            Performed pre-flight and post-flight inspections ensuring full compliance with aviation
+            safety standards. Coordinated real-time communication with air traffic and operations
+            teams. Maintained flight logs and contributed to operational efficiency and safety
+            improvement reports.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-text">
+          <h3>AEROSPACE ENGINEER (PART-TIME) – KIGALI ECOFLY TECHNOLOGY</h3>
+          <span>Feb 2023 – Present &nbsp;|&nbsp; Kigali, Rwanda</span>
+          <p>
+            Supported the design, integration, and testing of UAV propulsion and avionics systems.
+            Assisted with technical documentation and compliance alignment with RCAA and ICAO
+            standards. Participated in prototype flight testing and performance analysis. Contributed
+            to internal process reviews and technical reporting.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-text">
+          <h3>STUDENT INTERN – ERCAN INTERNATIONAL AIRPORT</h3>
+          <span>Jul 2022 – Oct 2022 &nbsp;|&nbsp; Tymbou, Cyprus</span>
+          <p>
+            Assisted air traffic controllers and aircraft maintenance engineers during daily
+            operations. Conducted aircraft inspections in line with maintenance and safety
+            requirements. Supported safety audits and maintenance documentation review.
           </p>
         </div>
       </div>
@@ -341,93 +581,126 @@
 
   <div class="exp-content" id="education">
     <div class="timeline">
-      
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-text">
-          <h3>ALX Software Engineering</h3>
-          <span>Frontend &amp; Backend</span>
-          <span>2025-2026</span>
-          <p>
-            Built full stack applications using React, Django, REST APIs,
-            authentication systems, and deployment workflows.
-          </p>
-        </div>
-      </div>
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-text">
           <h3>BSc Aerospace Engineering</h3>
-          <span>METU NCC</span>
-          <span>2017-2023</span>
+          <span>Middle East Technical University – Northern Cyprus Campus</span>
+          <span>Sep 2017 – Jan 2023</span>
           <p>
-            Strong foundation in aerodynamics, control systems, fluid dynamics,
-            thermodynamics, and numerical methods.
+            Strong foundation in aerodynamics, control systems, fluid dynamics, thermodynamics,
+            strength of materials, and numerical methods. Member of METU NCC Aerospace and
+            Problem Solving Societies. Astronomy Society Member.
           </p>
         </div>
-    </div>
-  </div>
-</div>
-
-
-  </section>
-
-  <!-- ================= BLOG ================= -->
-
-  <section id="blog" class="blog">
-    <div class="container">
-      <h2 class="section-title">Blog</h2>
-      <p class="section-sub">Insights & tutorials for full-stack engineering</p>
-
-
-  <div class="blog-filters">
-    <button class="blog-btn active" data-blog="all" type="button">All</button>
-    <button class="blog-btn" data-blog="web-development" type="button">Web Development</button>
-    <button class="blog-btn" data-blog="backend" type="button">Backend</button>
-    <button class="blog-btn" data-blog="ai-tech" type="button">AI &amp; Tech</button>
-    <button class="blog-btn" data-blog="career-tips" type="button">Career Tips</button>
-  </div>
-
-  <div class="blog-list">
-    <div class="blog-card" data-blog-category="web-development">
-      <span class="tag">Web development</span>
-      <h3>Build a Quiz App with React and Django REST API</h3>
-      <p>
-        Step by step tutorial building full stack application using React and Django REST API.
-      </p>
-      <div class="blog-meta">
-        <span>Apr 15 2026 • 6 min</span>
-        
       </div>
-    </div>
 
-    <div class="blog-card" data-blog-category="backend">
-      <span class="tag">Backend</span>
-      <h3>Improving Backend Performance: Caching Strategies</h3>
-      <p>
-        Learn how to use caching in optimizing backend performance.
-      </p>
-      <div class="blog-meta">
-        <span>May 15 2026 • 6 min</span>
-       
-      </div>
-    </div>
-
-    <div class="blog-card" data-blog-category="career-tips">
-      <span class="tag">Career Tips</span>
-      <h3>How to Build a Developer Portfolio That Gets Attention</h3>
-      <p>
-        Practical guidance on structure, projects, writing, and presentation for a stronger portfolio.
-      </p>
-      <div class="blog-meta">
-        <span>Jun 10 2026 • 5 min</span>
-        
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-text">
+          <h3>High School Diploma – Mathematics, Physics & Computer Science</h3>
+          <span>College Saint André</span>
+          <span>2014 – 2016 &nbsp;|&nbsp; Kigali, Rwanda</span>
+          <p>
+            Completed secondary education with a focus on mathematics, physics, and
+            computer science, building the analytical foundation for engineering studies.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <div class="exp-content" id="certifications">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-text">
+          <h3>Flight Operator Certificate</h3>
+          <span>Mar 2024 – Present</span>
+          <p>
+            Certified flight operator with demonstrated competency in UAV operations for safe
+            and timely medical deliveries, pre-flight checks, airspace coordination, and
+            compliance with safety protocols.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-text">
+          <h3>OSHA 10-Hour Training</h3>
+          <span>Mar 2024 – Present</span>
+          <p>
+            OSHA Outreach Training Program covering occupational safety and health in general
+            industry: workplace hazards, workers' rights, employer responsibilities, and
+            filing OSHA complaints.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-text">
+          <h3>Aircraft Model Certificate</h3>
+          <span>2018</span>
+          <p>
+            Designed and manufactured a physical aircraft model as part of an engineering
+            certification program.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-text">
+          <h3>Active Member – Red Cross Community</h3>
+          <span>2016</span>
+          <p>
+            Recognized community service and humanitarian engagement as an active Red Cross member.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-text">
+          <h3>Frontend Developer Certificate</h3>
+          <span>Mar 2026</span>
+          <p>
+            Frontend development with experience building responsive and user-friendly web
+            applications using React, JavaScript, and Tailwind CSS. Skilled in creating clean
+            UI components, integrating APIs, and ensuring smooth performance across devices.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-text">
+          <h3>Backend Developer Certificate</h3>
+          <span>Jan 2026</span>
+          <p>
+            Backend development with experience building RESTful APIs using Django and Django
+            REST Framework. Skilled in designing database models, implementing authentication
+            systems, and handling server-side logic.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-text">
+          <h3>Data Analyst Certificate</h3>
+          <span>Aug 2025</span>
+          <p>
+            Training in data cleaning, exploratory data analysis, visualization, and reporting
+            using Python, SQL, Power BI, and Excel, with practical experience on real-world
+            datasets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   </section>
@@ -436,35 +709,41 @@
 
   <section id="recommendation" class="recommendation">
     <div class="container">
-      <h2 class="section-title">Recommendation</h2>
-      <p class="section-sub">Client or peer endorsements</p>
+      <h2 class="section-title">Recommendations</h2>
+      <p class="section-sub">Endorsements from colleagues and mentors</p>
 
 
   <div class="testimonial-grid">
     <div class="testimonial-card">
-      <img src="images/t1.jpg" alt="Client portrait" />
-      <h3>RUCACA Magnifique</h3>
-      <span>CEO Kigali Ecofly </span>
+      <img src="images/t1.jpg" alt="Serge Tuyihambaze portrait" />
+      <h3>Serge Tuyihambaze</h3>
+      <span>CEO, INKJUBEIT</span>
       <p>
-        Highly professional and thorough. Delivered quality work and maintained strong communication throughout.
+        Aubin consistently demonstrates exceptional initiative and professionalism. His
+        contributions to our UAV ecosystem research and compliance work have been invaluable
+        to Rwanda's drone industry development.
       </p>
     </div>
 
     <div class="testimonial-card">
-      <img src="images/t2.jpg" alt="Client portrait" />
-      <h3>Dr. Sezibera</h3>
-      <span>CEO Manzi Creation</span>
+      <img src="images/t2.jpg" alt="Jean Marie Jianney Kabigici portrait" />
+      <h3>Jean Marie Jianney Kabigici</h3>
+      <span>Lead of Operations, Zipline Rwanda</span>
       <p>
-        He is a talented and dedicated professional who consistently delivers high-quality work.
+        Aubin is a reliable and detail-oriented flight operator who upheld the highest safety
+        standards throughout his tenure. His ability to coordinate under pressure and maintain
+        precise flight logs was outstanding.
       </p>
     </div>
 
     <div class="testimonial-card">
-      <img src="images/t3.png" alt="Client portrait" />
-      <h3>Dr Protojene Hahirwabayo</h3>
-      <span> CEO Nzira Ltd</span>
+      <img src="images/t3.png" alt="Prof. Mehrdad M. Sichani portrait" />
+      <h3>Asst. Prof. Dr. Mehrdad M. Sichani</h3>
+      <span>Aerospace Engineering Instructor, METU NCC</span>
       <p>
-        He is reliable, detail-oriented and consistently demonstrates excellent problem solving abilities
+        Aubin demonstrated strong mathematical and conceptual aptitude across Thermodynamics,
+        Fluid Mechanics, Strength of Materials, and Heat Transfer. He is a motivated and
+        capable engineer with a solid academic foundation.
       </p>
     </div>
   </div>
@@ -479,22 +758,23 @@
     <div class="container contact-container">
       <div class="contact-left">
         <h2>Get In Touch</h2>
-        <h3>Elevate your brand with me</h3>
+        <h3>Let's connect and collaborate</h3>
 
     <p>
-      Have a project in mind, a question, or just want to say hello?
-      Feel free to reach out! I’m always open to discussing.
+      Whether you have a project, a research opportunity, or a question about my work in
+      aerospace engineering and UAV systems, feel free to reach out.
     </p>
 
     <div class="contact-info">
       <p><strong>Phone:</strong> +250 790 492 219</p>
       <p><strong>Email:</strong> <a href="mailto:aubinigiraneza1@gmail.com">aubinigiraneza1@gmail.com</a></p>
+      <p><strong>Location:</strong> Kigali, Nyarugenge, Rwanda</p>
     </div>
 
     <div class="socials">
+      <a href="https://www.linkedin.com/in/aubinigiraneza/" target="_blank" rel="noopener noreferrer" class="project-link">LinkedIn</a>
       <a href="https://github.com/igiranezaa" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/aubinigiraneza/" class="project-link">LinkedIn</a>
-      <a href="https://x.com/aubinjoanes" class="project-link">Twitter</a>
+      <a href="https://x.com/aubinjoanes" target="_blank" rel="noopener noreferrer" class="project-link">Twitter</a>
     </div>
   </div>
 
@@ -521,7 +801,7 @@
 
   <footer class="footer">
     <div class="container footer-container">
-      <p>© 2026 Aubin Joanes Igiraneza</p>
+      <p>© 2026 Aubin Joanes Igiraneza — Aerospace Engineer</p>
   <div class="footer-links">
     <a href="#home">Home</a>
     <a href="#projects">Projects</a>

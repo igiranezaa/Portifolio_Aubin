@@ -389,6 +389,21 @@ margin-bottom: 10px;
 color: var(--text-main);
 }
 
+.about-info {
+margin-top: 22px;
+display: flex;
+flex-direction: column;
+gap: 8px;
+color: var(--text-muted);
+font-size: 0.95rem;
+}
+
+.about-info i {
+color: var(--green);
+margin-right: 8px;
+width: 16px;
+}
+
 /* ================= PROJECTS ================= */
 .projects {
 padding: 90px 0;
@@ -471,9 +486,188 @@ color: var(--text-muted);
 margin-bottom: 16px;
 }
 
+.project-date {
+display: inline-block;
+font-size: 0.82rem;
+color: var(--green);
+font-weight: 600;
+margin-bottom: 14px;
+background: rgba(25, 197, 111, 0.1);
+padding: 3px 10px;
+border-radius: 999px;
+}
+
 .project-buttons {
 display: flex;
 gap: 10px;
+flex-wrap: wrap;
+}
+
+.project-banner,
+.modal-banner {
+width: 100%;
+height: 220px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 0;
+}
+
+.modal-banner {
+height: 200px;
+border-radius: 16px;
+margin-bottom: 22px;
+}
+
+.banner-ecosystem {
+background: linear-gradient(135deg, #0a2e1a 0%, #0d3d24 50%, #0f4f2e 100%);
+}
+
+.banner-zipline {
+background: linear-gradient(135deg, #0a1a2e 0%, #0d2440 50%, #0f3060 100%);
+}
+
+.project-banner i,
+.modal-banner i {
+font-size: 4rem;
+color: var(--green);
+animation: floatIcon 3s ease-in-out infinite;
+filter: drop-shadow(0 0 18px rgba(25, 197, 111, 0.5));
+}
+
+@keyframes floatIcon {
+0%, 100% { transform: translateY(0) scale(1); opacity: 0.9; }
+50%       { transform: translateY(-12px) scale(1.08); opacity: 1; }
+}
+
+.read-more-btn {
+background: var(--card-soft);
+border: 1px solid var(--border);
+color: var(--green);
+font-weight: 600;
+border-radius: 10px;
+padding: 10px 14px;
+transition: 0.25s ease;
+}
+
+.read-more-btn:hover {
+background: var(--green);
+color: #fff;
+border-color: var(--green);
+}
+
+/* ================= MODALS ================= */
+.modal-overlay {
+display: none;
+position: fixed;
+inset: 0;
+z-index: 2000;
+background: rgba(0, 0, 0, 0.75);
+backdrop-filter: blur(6px);
+overflow-y: auto;
+padding: 40px 20px;
+}
+
+.modal-overlay.active {
+display: flex;
+align-items: flex-start;
+justify-content: center;
+}
+
+.modal-box {
+position: relative;
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 24px;
+padding: 36px;
+max-width: 720px;
+width: 100%;
+box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+animation: modalIn 0.25s ease;
+}
+
+@keyframes modalIn {
+from { opacity: 0; transform: translateY(24px); }
+to   { opacity: 1; transform: translateY(0); }
+}
+
+.modal-close {
+position: absolute;
+top: 16px;
+right: 20px;
+background: var(--card-soft);
+border: 1px solid var(--border);
+color: var(--text-main);
+font-size: 1.4rem;
+width: 36px;
+height: 36px;
+border-radius: 50%;
+line-height: 1;
+transition: background 0.2s ease;
+}
+
+.modal-close:hover {
+background: var(--green);
+color: #fff;
+border-color: var(--green);
+}
+
+.modal-img {
+width: 100%;
+max-height: 280px;
+object-fit: cover;
+border-radius: 16px;
+margin-bottom: 22px;
+}
+
+.modal-box h2 {
+font-size: 1.4rem;
+margin-bottom: 8px;
+}
+
+.modal-section {
+margin-top: 22px;
+}
+
+.modal-section h4 {
+font-size: 1rem;
+color: var(--green);
+margin-bottom: 10px;
+}
+
+.modal-section p {
+color: var(--text-muted);
+font-size: 0.97rem;
+line-height: 1.7;
+}
+
+.modal-section ul {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.modal-section ul li {
+color: var(--text-muted);
+font-size: 0.96rem;
+padding-left: 18px;
+position: relative;
+}
+
+.modal-section ul li::before {
+content: "→";
+position: absolute;
+left: 0;
+color: var(--green);
+font-size: 0.85rem;
+}
+
+.modal-actions {
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+margin-top: 28px;
 }
 
 .project-buttons a {
@@ -920,9 +1114,22 @@ color: var(--green);
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 992px) {
+
+/* --- Large tablets / small laptops --- */
+@media (max-width: 1100px) {
 .navbar {
 padding: 0 70px;
+}
+
+.projects-grid {
+gap: 18px;
+}
+}
+
+/* --- Tablets --- */
+@media (max-width: 992px) {
+.navbar {
+padding: 0 60px;
 }
 
 .nav-links {
@@ -933,13 +1140,37 @@ display: none;
 display: block;
 }
 
-.about-container,
-.contact-container,
-.projects-grid,
-.testimonial-grid {
+/* About */
+.about-container {
+grid-template-columns: 1fr;
+gap: 36px;
+text-align: center;
+}
+
+.about-left {
+max-width: 340px;
+margin: 0 auto;
+}
+
+.about-right {
+max-width: 720px;
+margin: 0 auto;
+}
+
+.about-info {
+align-items: center;
+}
+
+.about-skills p {
+text-align: left;
+}
+
+/* Projects */
+.projects-grid {
 grid-template-columns: 1fr;
 }
 
+/* Skills */
 .skills-grid {
 grid-template-columns: 1fr;
 }
@@ -948,62 +1179,141 @@ grid-template-columns: 1fr;
 grid-column: auto;
 }
 
-.about-container {
-gap: 36px;
-text-align: center;
+/* Testimonials: 3 → 2 cols */
+.testimonial-grid {
+grid-template-columns: repeat(2, 1fr);
 }
 
-.about-right {
-max-width: 720px;
-margin: 0 auto;
+/* Contact */
+.contact-container {
+grid-template-columns: 1fr;
 }
 
 .contact-left {
 text-align: center;
 }
 
+.contact-info {
+display: inline-block;
+text-align: left;
+}
+
 .socials {
 justify-content: center;
 }
+
+/* Experience tabs */
+.exp-tabs {
+gap: 10px;
+}
 }
 
+/* --- Large phones --- */
 @media (max-width: 768px) {
+/* Sections: reduce vertical padding */
+.about,
+.projects,
+.skills,
+.experience,
+.recommendation,
+.contact {
+padding-top: 64px;
+padding-bottom: 64px;
+}
+
+/* Hero */
 .hero {
 min-height: auto;
-padding-top: 150px;
-padding-bottom: 80px;
+padding-top: 130px;
+padding-bottom: 70px;
 }
 
 .hero-buttons {
 flex-direction: column;
+align-items: center;
 }
 
-.btn {
+.hero-buttons .btn {
 width: 100%;
+max-width: 300px;
 }
 
+/* Form */
 .form-grid {
 grid-template-columns: 1fr;
 }
 
+/* Timeline */
 .timeline {
-padding-left: 30px;
+padding-left: 28px;
+}
+
+.timeline::before {
+left: 8px;
+}
+
+.timeline-dot {
+left: -4px;
 }
 
 .timeline-text {
-margin-left: 12px;
+margin-left: 10px;
+padding: 14px;
 }
 
+/* Testimonials: 2 → 1 col */
+.testimonial-grid {
+grid-template-columns: 1fr;
+max-width: 480px;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* Footer */
 .footer-container {
 justify-content: center;
 text-align: center;
 }
+
+.footer-links {
+justify-content: center;
 }
 
+/* Experience tabs wrap neatly */
+.exp-tabs {
+flex-wrap: wrap;
+justify-content: center;
+}
+
+/* Modal */
+.modal-box {
+padding: 24px 20px;
+border-radius: 18px;
+}
+
+.modal-overlay {
+padding: 20px 12px;
+}
+
+.modal-box h2 {
+font-size: 1.2rem;
+}
+
+.modal-banner {
+height: 160px;
+}
+
+/* Project banner */
+.project-banner {
+height: 180px;
+}
+}
+
+/* --- Small phones --- */
 @media (max-width: 560px) {
 .navbar {
-height: 70px;
-padding: 0 58px;
+height: 68px;
+padding: 0 56px;
 width: calc(100% - 20px);
 }
 
@@ -1016,24 +1326,141 @@ left: 12px;
 }
 
 .theme-toggle {
-width: 62px;
-height: 34px;
+width: 60px;
+height: 32px;
 }
 
 .toggle-circle {
-width: 26px;
-height: 26px;
+width: 24px;
+height: 24px;
 }
 
 body.light-mode .toggle-circle {
 transform: translateX(28px);
 }
 
+/* Section sub-title spacing */
+.section-sub {
+margin-bottom: 24px;
+}
+
+/* Project buttons stack */
 .project-buttons {
 flex-direction: column;
 }
 
-.blog-meta {
+.project-buttons a,
+.project-buttons button {
+width: 100%;
+text-align: center;
+}
+
+/* Skill card padding */
+.skill-card {
+padding: 18px;
+}
+
+/* Timeline tighter */
+.timeline {
+padding-left: 22px;
+}
+
+.timeline::before {
+left: 6px;
+}
+
+.timeline-dot {
+left: -4px;
+width: 12px;
+height: 12px;
+}
+
+.timeline-text {
+margin-left: 8px;
+}
+
+/* Contact form */
+.contact-right form {
+padding: 18px;
+}
+
+/* Modal full-screen feel */
+.modal-overlay {
+padding: 12px 8px;
+align-items: flex-start;
+}
+
+.modal-box {
+padding: 20px 16px;
+border-radius: 14px;
+}
+
+.modal-close {
+top: 12px;
+right: 12px;
+}
+
+.modal-actions {
 flex-direction: column;
+}
+
+.modal-actions .btn {
+width: 100%;
+text-align: center;
+}
+
+/* About skills left-align on small screens */
+.about-skills p {
+text-align: left;
+}
+}
+
+/* --- Very small phones --- */
+@media (max-width: 400px) {
+.navbar {
+padding: 0 50px;
+}
+
+.hero h1 {
+font-size: 2.2rem;
+}
+
+.hero h2 {
+font-size: 1.1rem;
+}
+
+.hero p {
+font-size: 0.97rem;
+}
+
+.section-title {
+font-size: 1.8rem;
+}
+
+.project-banner {
+height: 150px;
+}
+
+.project-banner i,
+.modal-banner i {
+font-size: 3rem;
+}
+
+.modal-box {
+padding: 18px 14px;
+}
+
+.timeline {
+padding-left: 18px;
+}
+
+.timeline-dot {
+width: 10px;
+height: 10px;
+}
+
+.exp-btn {
+padding: 8px 14px;
+font-size: 0.84rem;
 }
 }
